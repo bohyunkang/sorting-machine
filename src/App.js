@@ -33,19 +33,19 @@ function App() {
 				<h1>Sorting Machine</h1>
 				<Timer language={"kr-KO"} />
 				<div className="number-input section">
-					<span>숫자 입력</span>
-					<input ref={inputNumbers}></input>
+					<span>정렬하고 싶은 숫자를 입력해주세요!</span>
+					<input ref={inputNumbers} />
 				</div>
 				<button className="start-button section" onClick={handleClick}>
-					정렬 시작
+					정렬 시작하기
 				</button>
 				<div className="output-asc section">
-					<span>결과 필드 오름차순</span>
-					<div>{ascendingResult.join(", ")}</div>
+					<span>결과 (오름차순)</span>
+					<div className="number-output">{ascendingResult.join(", ")}</div>
 				</div>
 				<div className="output-desc section">
-					<span>결과 필드 내림차순</span>
-					<div>{descendingResult.join(", ")}</div>
+					<span>결과 (내림차순)</span>
+					<div className="number-output">{descendingResult.join(", ")}</div>
 				</div>
 				<Timer language={"en-US"} />
 			</div>

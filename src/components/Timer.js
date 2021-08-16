@@ -19,8 +19,7 @@ export default function Timer({ language }) {
 	useEffect(() => setTimerUI(resultTimer), [resultTimer]);
 
 	return (
-		<div className="section">
-			<span>타이머</span>
+		<div className="timer section">
 			<div>{timerUI}</div>
 		</div>
 	);

@@ -1,6 +1,7 @@
 export const sortByAscending = (dataToSort) => {
 	const resultArray = [];
-	//divde
+	//divide
+	dataToSort = dataToSort.map((el) => Number(el));
 	if (dataToSort.length < 2) return dataToSort;
 
 	const mid = Math.floor(dataToSort.length / 2);

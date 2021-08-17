@@ -4,7 +4,7 @@
 
 ## 💻 UI 미리보기
 
-![sorting-machine](https://user-images.githubusercontent.com/65386533/129725502-8ec58c45-ffe3-4225-b1bd-ba8a459b3362.gif)
+![sorting-machine](https://user-images.githubusercontent.com/65386533/129732709-f6f302cf-6262-45e8-91d9-066a9bb67b6b.gif)
 
 ## 기능 구현
 

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { sortByAscending } from "./utils/sortFunction";
+import { sortFunction } from "./utils/sortFunction";
 import Timer from "./components/Timer";
 import "./App.css";
 
@@ -14,15 +14,14 @@ function App() {
 		const dataToSort = inputData
 			.trim()
 			.split(",")
-			.filter((el) => !isNaN(el));
-
+			.filter((el) => !isNaN(el) && el);
 		setDataToRender(dataToSort);
 	};
 
 	useEffect(() => {
-		setAscendingResult(sortByAscending(dataToRender));
+		setAscendingResult(sortFunction(dataToRender, "ascending"));
 		setTimeout(
-			() => setDescendingResult(sortByAscending(dataToRender).reverse()),
+			() => setDescendingResult(sortFunction(dataToRender, "descending")),
 			3000
 		);
 	}, [dataToRender]);

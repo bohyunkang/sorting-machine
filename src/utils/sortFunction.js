@@ -1,4 +1,4 @@
-export const sortFunction = (dataToSort, type) => {
+export const sortFunction = (dataToSort, type = "ascending") => {
 	const resultArray = [];
 
 	//divide

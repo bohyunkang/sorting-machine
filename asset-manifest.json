@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sorting-machine/static/css/main.8f8ac55a.chunk.css",
+    "main.js": "/sorting-machine/static/js/main.7b83a007.chunk.js",
+    "main.js.map": "/sorting-machine/static/js/main.7b83a007.chunk.js.map",
+    "runtime-main.js": "/sorting-machine/static/js/runtime-main.710976fd.js",
+    "runtime-main.js.map": "/sorting-machine/static/js/runtime-main.710976fd.js.map",
+    "static/js/2.0b4bc983.chunk.js": "/sorting-machine/static/js/2.0b4bc983.chunk.js",
+    "static/js/2.0b4bc983.chunk.js.map": "/sorting-machine/static/js/2.0b4bc983.chunk.js.map",
+    "index.html": "/sorting-machine/index.html",
+    "static/css/main.8f8ac55a.chunk.css.map": "/sorting-machine/static/css/main.8f8ac55a.chunk.css.map",
+    "static/js/2.0b4bc983.chunk.js.LICENSE.txt": "/sorting-machine/static/js/2.0b4bc983.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.710976fd.js",
+    "static/js/2.0b4bc983.chunk.js",
+    "static/css/main.8f8ac55a.chunk.css",
+    "static/js/main.7b83a007.chunk.js"
+  ]
+}

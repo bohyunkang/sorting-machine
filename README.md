@@ -28,7 +28,9 @@ npm start
 ## 참고 자료
 
 [🔗 병합 알고리즘 1](https://blog.naver.com/namju1v/222226455895)
+
 [🔗 병합 알고리즘 2](https://im-developer.tistory.com/134)
+
 [🔗 Intl.DateTimeFormat](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)
 
 ## 팀원

@@ -9,7 +9,7 @@ export default function Timer({ language }) {
 	const [timerUI, setTimerUI] = useState("");
 
 	const resultDate = new Intl.DateTimeFormat(language, {
-		dateStyle: "long",
+		dateStyle: "full",
 	}).format(currentDate);
 
 	const resultTimer = new Intl.DateTimeFormat(language, {

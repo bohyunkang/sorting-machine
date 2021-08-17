@@ -37,6 +37,7 @@ function App() {
 				<ResultDescending {...{ descendingResult, start, setStart }} />
 
 				<Timer language={"en-US"} />
+				<span className="copyright">@bohyunkang & @skawnkk</span>
 			</div>
 		</div>
 	);

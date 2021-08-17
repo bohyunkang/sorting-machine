@@ -13,7 +13,8 @@ function InputNumbers({ message, setMessage, setDataToRender }) {
 			setMessage(WRITE);
 			return;
 		}
-
+		const filteredData = filterInputs(inputData);
+		if (filteredData.length === 0) setMessage(ERROR);
 		setDataToRender(filterInputs(inputData));
 	};
 

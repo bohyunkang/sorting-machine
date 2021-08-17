@@ -8,7 +8,7 @@ import { MESSAGE } from "./utils/constants";
 import "./App.css";
 
 function App() {
-	const { GUIDE, ERROR } = MESSAGE;
+	const { GUIDE } = MESSAGE;
 	const [start, setStart] = useState(false);
 	const [dataToRender, setDataToRender] = useState([]);
 	const [ascendingResult, setAscendingResult] = useState([]);
@@ -16,13 +16,13 @@ function App() {
 	const [message, setMessage] = useState(GUIDE);
 
 	useEffect(() => {
+		if (dataToRender.length === 0) return;
 		setAscendingResult(sortFunction(dataToRender, "ascending"));
 		setTimeout(
 			() => setDescendingResult(sortFunction(dataToRender, "descending")),
 			3000
 		);
-
-		dataToRender.length ? setStart(true) : setMessage(ERROR);
+		setStart(true);
 	}, [dataToRender]);
 
 	return (

@@ -1,20 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-const CountDown = ({ start, setStart }) => {
-	const [timer, setTimer] = useState(3);
+const CountDown = ({ setStart }) => {
+  const [timer, setTimer] = useState(3);
 
-	useEffect(() => {
-		const timeOut = setInterval(() => {
-			if (timer === 1) {
-				clearInterval(timeOut);
-				setStart(false);
-			}
-			if (timer > 0) setTimer(timer - 1);
-		}, 1000);
-		return () => clearInterval(timeOut);
-	}, [timer]);
+  useEffect(() => {
+    const playCountDown = () => {
+      if (timer === 1) {
+        clearTimeout(timeOut);
+        setStart(false);
+      }
+      if (timer > 0) setTimer(timer - 1);
+    };
 
-	return <div className="countdown-number">{timer}</div>;
+    const timeOut = setTimeout(playCountDown, 1000);
+    return () => clearTimeout(timeOut);
+  }, [timer]);
+
+  return <div className="countdown-number">{timer}</div>;
 };
 
 export default CountDown;

@@ -3,9 +3,9 @@ import CountDown from './CountDown';
 
 function ResultDescending({ descendingResult, start, setStart }) {
   return (
-    <div className='output-desc section'>
+    <div className="output-desc section">
       <span>내림차순 결과</span>
-      <div className='number-output'>
+      <div className="number-output">
         <div>{start ? <CountDown setStart={setStart} /> : descendingResult.join(', ')}</div>
       </div>
     </div>

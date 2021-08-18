@@ -20,14 +20,14 @@ function InputNumbers({ message, setMessage, setDataToRender }) {
 
   return (
     <>
-      <div className='number-input section'>
+      <div className="number-input section">
         <span>{message}</span>
         <textarea
           ref={inputNumbers}
-          placeholder='숫자를 콤마(,)로 구분해주세요.&#13;&#10;유효하지 않은 값은 제외됩니다.&#13;&#10;ex) 3,12,7,89,100'
+          placeholder="숫자를 콤마(,)로 구분해주세요.&#13;&#10;유효하지 않은 값은 제외됩니다.&#13;&#10;ex) 3,12,7,89,100"
         />
       </div>
-      <button className='start-button section' onClick={handleClick}>
+      <button className="start-button section" onClick={handleClick}>
         정렬 시작하기
       </button>
     </>

@@ -16,7 +16,7 @@ const CountDown = ({ setStart }) => {
     return () => clearTimeout(timeOut);
   }, [timer]);
 
-  return <div className='countdown-number'>{timer}</div>;
+  return <div className="countdown-number">{timer}</div>;
 };
 
 export default CountDown;

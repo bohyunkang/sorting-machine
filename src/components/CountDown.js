@@ -4,13 +4,15 @@ const CountDown = ({ setStart }) => {
   const [timer, setTimer] = useState(3);
 
   useEffect(() => {
-    const timeOut = setTimeout(() => {
+    const playCountDown = () => {
       if (timer === 1) {
         clearTimeout(timeOut);
         setStart(false);
       }
       if (timer > 0) setTimer(timer - 1);
-    }, 1000);
+    };
+
+    const timeOut = setTimeout(playCountDown, 1000);
     return () => clearTimeout(timeOut);
   }, [timer]);
 
